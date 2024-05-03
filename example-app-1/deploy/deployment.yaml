@@ -5,11 +5,12 @@ metadata:
   labels:
     app: example-app-1
   namespace: default
+  
 spec:
   selector:
     matchLabels:
       app: example-app-1
-  replicas: 5
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
